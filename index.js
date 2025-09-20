@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-fs.mkdir("raju", (err)=>{
+fs.readdir(".", (err, files)=>{
     if (err) throw err;
-    console.log(" new directory created ! ");
+    console.log(" files in dir ", files);
 });
