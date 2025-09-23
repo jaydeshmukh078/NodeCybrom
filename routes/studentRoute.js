@@ -1,18 +1,12 @@
 const express = require("express");
 const route = express.Router();
+const stuController = require("../controllers/studentController");
 
-
-route.get("/home",(req,res)=>{
-    res.send("This is home page");
-});
-route.get("/about",(req,res)=>{
-    res.send("This is about page");
-});
-route.get("/subject",(req,res)=>{
-    res.send("This is Subject page");
-});
-route.get("/fees",(req,res)=>{
-    res.send("This is Fees page");
-});
+route.get("/home", stuController.HomePage);
+route.get("/about", stuController.AboutPage);
+route.get("/services", stuController.ServicesPage);
+route.get("/course", stuController.CoursePage);
+route.get("/fees", stuController.FeesPage);
+route.get("/contact", stuController.ContactPage);
 
 module.exports = route;
