@@ -1,20 +1,20 @@
 const HomePage = (req, res) => {
-    res.send("Welcome to the Home Page");
+    res.render("home");
 };
 const AboutPage = (req, res) => {
-    res.send("Welcome to the About Page");
+    res.render("about");
 };
 const ServicesPage = (req, res) => {
-    res.send("Welcome to the Services Page");
+    res.render("service");
 };
 const CoursePage = (req, res) => {
-    res.send("Welcome to the Course Page");
+    res.render("course");
 };
 const FeesPage = (req, res) => {
-    res.send("Welcome to the Fees Page");
+    res.render("fees");
 };
 const ContactPage = (req, res) => {
-    res.send("Welcome to the Contact Page");
+    res.render("contact");  
 };
 
 
